@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" themes ="black">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment -4</title>
+    <!--tailwind CSS-->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!--font - awesome-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!--google-font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+   
+</head>
+<body class="font">
+    <header class="w-[80%] mx-auto py-7">
+        <h2 class="text-4xl font-bold text-green-600">Job Application Tracker</h2>
+    </header>
+    <main class="w-[80%] mx-auto">
+        <!--cards of state-->
+        <div class="grid grid-cols-3 gap-8">
+            <div class="bg-slate-200 px-6 py-5 rounded-2xl">
+                <p>Total</p>
+                <p id="total">0</p>
+            </div>
+            <div class="bg-emerald-100 px-6 py-5 rounded-2xl">
+                <p>Interview</p>
+                <p id="interview">0</p>
+            </div>
+            <div class="bg-red-100 px-6 py-5 rounded-2xl">
+                <p>Rejected</p>
+                <p id="rejected">0</p>
+            </div>
+        </div>
+        <!--Divider-->
+        <hr class="mt-5 border-2 border-gray-100">
+        <!--section Header-->
+        <div class="flex justify-between py-8">
+            <h2 class="text-2xl font-bold">Avilable Jobs</h2>
+            <span class="font-bold text-gray-500"><span id="avilable">8</span>jobs</span>
+        </div>
+        <!--Tabs-->
+        <div class="flex flex-wrap gap-4 mb-8">
+            <button id="tab-all" onclick="switchTab('all')" class="px-5 py-4 rounded-full cursor-pointer font-medium border-2">All</button>
+            <button id="tab-interview" onclick="switchTab('interview')" class="px-6 py-4 rounded-full border-2 cursor-pointer font-medium ">Interview</button>
+            <button id="tab-rejected" onclick="switchTab('rejected')" class="px-6 py-4 rounded-full border-2 cursor-pointer font-medium">Rejected</button>
+        </div>
+        <!--job-cards-->
+        <div id="jobs-container" class="flex flex-col gap-6">
+            <section class="hidden flex-col gap-6" id="all-container">
+                <div class="card bg-white rounded-2xl px-6 py-5 shadow-lg ">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">Mobile First Crope</p>
+                            <p class="text-gray-700">React Native Developer</p>
+                            <p class="mt-7 text-[15px] space-x-1">
+                                <span>Remote</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$130.000 - $175.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-500 px-3 py-1 rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700">
+                                Build cross-platform mobile applications using React Native. Work on products
+                                used by millions of users worldwide.</p>
+                            <div class="space-x-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-400 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-400 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+               
+            </section>
+            <section class="hidden" id="interview-container">Interview</section>
+            <section class="hidden" id="rejected-container">Rejected</section>
+        </div>
+        <!--empty-state-->
+        <div id="empty-state" class="hidden flex-col items-center justify-center py-25 text-center space-y-2 bg-red-100 rounded-2xl">
+            <div class="text-7xl"><i class="fa-regular fa-file-lines"></i></div>
+            <p class="font-bold text-2xl ">No jobs available</p>
+            <p class="text-slate-600">Check back soon for new job opportunities</p>
+        </div>
+    </main>
+    <script src="script.js  "></script>
+</body>
+</html>
