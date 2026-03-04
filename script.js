@@ -7,7 +7,7 @@ const interviewContiner = document.getElementById('interview-container');
 const rejectedContainer = document.getElementById('rejected-container');
 const emptyState = document.getElementById('empty-state');
 const avilable = document.getElementById('avilable')
-//console.log(allContainer,interviewContiner,rejectedContainer)
+
 
 // total interview reject count
 const total = document.getElementById('total');
@@ -16,12 +16,11 @@ const rejected = document.getElementById('rejected');
 total.innerText = allContainer.children.length
 
 function switchTab(tab) {
-   //console.log(tab);
    const tabs = ["all", "interview", "rejected"];
     currentTab = tab;
    for(const t of tabs){
         const tabName = document.getElementById("tab-" + t);
-        //console.log(tabName);
+       
         if(t === tab){
             tabName.classList.remove( ...tabInactive);
             tabName.classList.add( ...tabActive)
@@ -55,36 +54,34 @@ function switchTab(tab) {
 }
 switchTab(currentTab)
 document.getElementById('jobs-container').addEventListener('click', function(event){
-    //console.log(event.target)
+    
     const clickElement = event.target;
     const card = clickElement.closest('.card');
     const status = card.querySelector('.status');
     const parent = card.parentNode;
-    //console.log(clickElement)
-    //console.log(card)
+ 
+   
     if(clickElement.classList.contains('interview')){
-        //console.log('interview clicked')
+       
         status.innerText = "Interview";
         interviewContiner.appendChild(card);
         updateStat()
     }
      if(clickElement.classList.contains('rejected')){
-        //console.log('rejected clicked')
+       
        status.innerText = "Rejected";
        rejectedContainer.appendChild(card);
        updateStat()
     }
      if(clickElement.classList.contains('delete')){
-        //console.log('delete clicked')
+       
         parent.removeChild(card);
         updateStat()
 
     }
 });
 function updateStat (){
-    //total.innerText = allContainer.children.length;
-    //interview.innerText = interviewContiner.children.length;
-    //rejected.innerText = rejectedContainer.children.length;
+
     const counts = {
         all : allContainer.children.length,
         interview : interviewContiner.children.length,
