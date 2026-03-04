@@ -1,6 +1,6 @@
 let currentTab = 'all';
-const tabActive = ["bg-red-500", "border-navy-300", "text-white"];
-const tabInactive = ["bg-transparent", "text-red-700", "border-red-200", "text-black"];
+const tabActive = ["bg-sky-500", "border-navy-300", "text-white"];
+const tabInactive = ["bg-transparent",  "border-green-200", "text-black"];
 
 const allContainer = document.getElementById('all-container');
 const interviewContiner = document.getElementById('interview-container');
