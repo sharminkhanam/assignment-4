@@ -6,7 +6,9 @@ const allContainer = document.getElementById('all-container');
 const interviewContiner = document.getElementById('interview-container');
 const rejectedContainer = document.getElementById('rejected-container');
 const emptyState = document.getElementById('empty-state');
-const avilable = document.getElementById('avilable')
+const avilable = document.getElementById('avilable');
+
+
 
 
 // total interview reject count
@@ -53,6 +55,7 @@ function switchTab(tab) {
    }
 }
 switchTab(currentTab)
+
 document.getElementById('jobs-container').addEventListener('click', function(event){
     
     const clickElement = event.target;
@@ -85,12 +88,14 @@ function updateStat (){
     const counts = {
         all : allContainer.children.length,
         interview : interviewContiner.children.length,
-        rejected : rejectedContainer.children.length
+        rejected : rejectedContainer.children.length,
+        
     };
     total.innerText = counts['all'];
     interview.innerText = counts['interview'];
     rejected.innerText = counts['rejected'];
     avilable.innerText = counts[currentTab];
+    
     if(counts[currentTab] < 1){
         emptyState.classList.remove('hidden')
     }else{

@@ -10,14 +10,11 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <!--google-font--> 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" 
-    rel="stylesheet">
+     
+    
    
 </head>
-<body class="font">
+<body >
     <header class="w-[80%] mx-auto py-7 px-10">
         <h2 class="text-2xl font-bold text-green-700">Job Application Tracker</h2>
     </header>
@@ -55,7 +52,7 @@
             <section class="hidden flex-col gap-6" id="all-container">
                 <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg ">
                     <div class="flex justify-between items-start gap-6">
-                        <div class="space-y-2">
+                        <div class="space-y-2 flex-1 min-w-0">
                             <p class="font-bold text-[25px]">Mobile First Crope</p>
                             <p class="text-gray-700">React Native Developer</p>
                             <p class="mb-5 text-[15px] space-x-1">
@@ -73,7 +70,7 @@
                                 used by millions of users worldwide.</p>
                             <div class="flex flex-wrap gap-4">
                                 <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
-                                <button class="rejected font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Rejected</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
                             </div>
 
                         </div>
@@ -81,7 +78,229 @@
                     </div>
 
                 </div>
-               
+                <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">CloudFirst Inc</p>
+                            <p class="text-gray-700">Backend Developer</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>Sattle WA</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                               Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer  hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+                <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">Innovation Labs</p>
+                            <p class="text-gray-700">UI/UX Engineer</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>Austin TX</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                              Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
+
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+                  <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">StartupXYZ</p>
+                            <p class="text-gray-700">Full Stack Engineer</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>Remote</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                             Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
+
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+                <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">TechCorp Industries</p>
+                            <p class="text-gray-700">Senior Frontend Developer</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>San Franseco CA</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                               We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
+
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+                <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">DataViz Solutions</p>
+                            <p class="text-gray-700">Data Visualization Specialist</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>Bosto, MA</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                               Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
+
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+                <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">WebFlow Agency</p>
+                            <p class="text-gray-700">Web Designer & Developer</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>Bosto, MA</span>
+                                <span>.</span>
+                                <span>Part-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                                Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
+
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+                <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">MegaCorp Solutions</p>
+                            <p class="text-gray-700">JavaScript Developer</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>Austin, TX</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                               Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required..</p>
+
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
+                <div class="card bg-slate-100 rounded-2xl px-6 py-5 shadow-lg mt-10">
+                    <div class="flex justify-between items-start gap-6">
+                        <div class="space-y-2">
+                            <p class="font-bold text-[25px]">DataViz Solutions2</p>
+                            <p class="text-gray-700">Data Visualization Specialist</p>
+                            <p class="mb-5 text-[15px] space-x-1">
+                                <span>Bosto, MA</span>
+                                <span>.</span>
+                                <span>Full-Time</span>
+                                <span>.</span>
+                                <span>$120.000 - $165.000</span>
+                            </p>
+                            <div class="status font-bold bg-slate-200 mb-4 px-3 py-1 uppercase rounded-full inline-block">
+                                Not Applied
+                            </div>
+                            <p class="text-slate-700 mb-4">
+                               Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
+
+                            <div class="flex flex-wrap gap-4">
+                                <button class="interview font-semibold border-2 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-green-600 hover:text-white">Interview</button>
+                                <button class="rejected font-semibold border-2 border-red-500 px-4 py-2 text-sm rounded-md cursor-pointer hover:bg-red-600 hover:text-white">Rejected</button>
+                            </div>
+
+                        </div>
+                        <button class="bg-red-300 hover:bg-red-500 px-3 py-2 rounded-full delete"> <i class="fa-regular fa-trash-can pointer-events-none "></i></button>
+                    </div>
+
+                </div>
             </section>
             <section class="hidden" id="interview-container">Interview</section>
             <section class="hidden" id="rejected-container">Rejected</section>
